@@ -1,0 +1,64 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.rest</groupId>
+  <artifactId>restclient</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>restclient</name>
+  
+   <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java-version>1.8</java-version>
+    <org.kie-version>7.35.0.Final</org.kie-version>
+    <maven-comiler-source>1.8</maven-comiler-source>
+    <maven-comiler-target>1.8</maven-comiler-target>
+  </properties>
+  
+  <dependencies>
+  <!-- HttpClient dependencies in tact with JBPM starts -->
+  <dependency>
+      <groupId>org.jbpm</groupId>
+      <artifactId>jbpm-flow</artifactId>
+      <version>${org.kie-version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jbpm</groupId>
+      <artifactId>jbpm-services-cdi</artifactId>
+      <version>${org.kie-version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.datatype</groupId>
+      <artifactId>jackson-datatype-jsr310</artifactId>
+      <version>2.9.9</version>
+      <scope>provided</scope>
+    </dependency>
+    <!-- HttpClient dependencies in tact with JBPM end -->
+    <!-- Resttemplate dependencies starts -->
+    <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-web</artifactId>
+    	<version>4.3.8.RELEASE</version>
+	</dependency>
+	<!-- Resttemplate dependencies end -->
+	
+	<!-- Resteasyclient dependencies starts -->
+	<dependency>
+		<groupId>org.jboss.resteasy</groupId>
+		<artifactId>resteasy-client</artifactId>
+		<version>3.6.1.Final</version>
+	</dependency>
+	<dependency>
+	  <groupId>javax.json</groupId>
+  	  <artifactId>javax.json-api</artifactId>
+  	  <version>1.1.2</version>
+	</dependency>
+	<!-- Resteasyclient dependencies ends -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
